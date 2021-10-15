@@ -2,16 +2,267 @@
 <html>
 <head>
 <title>PSE SAMPLES</title>
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    
+<center>
+<section class="markdown-body">
 
-<h1>Init</h1>
-<!-- <p><audio
-    controls
-    src="test.wav">
-        Your browser does not support the
-        <code>audio</code> element.
-</audio></p> -->
+    <section>
+        <h1>Personalized Speech Enhancement: <br>New Models and Comprehensive Evaluation</h1>
+
+        <p>
+            We present samples for our personalized speech enhancement (PSE) and unconditional speech enhancement <a href="https://arxiv.org/abs/2008.00264v4">(DCCRN)</a> models. Personalized SE models can remove the interfering speakers in addition to the background noise. 
+        </p>
+        <p>
+            We proposed two causal models that can run in real-time: personalized DCCRN (pDCCRN) and deep convolutional attention U-NET (pDCATTUNET). Please see our paper for detailed information. 
+        </p>
+    </section>
+    
+
+<h2>Synthetic Data</h2>
+
+<p>These synthetic overlapped-speech samples contain clean speech from the VCTK corpus.</p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0", align-items="center">
+    <thead>
+        <tr>
+            <th>No processing</th>
+            <th>Clean reference</th>
+            <th>DCCRN</th>
+            <th>pDCCRN</th>
+            <th>pDCATTUNET</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><audio
+                controls
+                src="samples/synth/s1_1_no_processing.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s1_2_ref.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s1_3_dccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s1_4_pdccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s1_5_pdcattunet.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+        </tr>
+        <tr>
+            <td><audio
+                controls
+                src="samples/synth/s2_1_no_processing.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s2_2_ref.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s2_3_dccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s2_4_pdccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s2_5_pdcattunet.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+        </tr>
+        <tr>
+            <td><audio
+                controls
+                src="samples/synth/s3_1_no_processing.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s3_2_ref.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s3_3_dccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s3_4_pdccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s3_5_pdcattunet.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+        </tr>
+        <tr>
+            <td><audio
+                controls
+                src="samples/synth/s4_1_no_processing.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s4_2_ref.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s4_3_dccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s4_4_pdccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/synth/s4_5_pdcattunet.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>Real Data</h2>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <th>No processing</th>
+            <th>DCCRN</th>
+            <th>pDCCRN</th>
+            <th>pDCATTUNET</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><audio
+                controls
+                src="samples/real/s1_1_no_processing.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/real/s1_2_dccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/real/s1_3_pdccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/real/s1_4_pdcattunet.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+        </tr>
+        <tr>
+            <td><audio
+                controls
+                src="samples/real/s2_1_no_processing.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/real/s2_2_dccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/real/s2_3_pdccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/real/s2_4_pdcattunet.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+        </tr>
+        <tr>
+            <td><audio
+                controls
+                src="samples/real/s3_1_no_processing.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/real/s3_2_dccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/real/s3_3_pdccrn.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>
+            <td><audio
+                controls
+                src="samples/real/s3_4_pdcattunet.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio></td>        
+        </tr>
+    </tbody>
+</table>
+</section>
+</center>
+
 
 </body>
 </html>

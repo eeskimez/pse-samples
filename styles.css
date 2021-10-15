@@ -1,0 +1,59 @@
+
+  body {
+    background-color: #fbfbfb;
+    margin: 0;
+  }
+  .markdown-body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 45px;
+    overflow-x:scroll;
+    max-width:900px;
+    background-color: #f6f6f6;
+    font-family: sans-serif !important;
+  }
+
+  audio {
+    width:150px;
+  }
+
+  p {
+    text-align:justify;
+  }
+
+  h1 {
+    border-bottom: 1px solid #eaecef;
+  }
+
+  h2 {
+    border-bottom: 1px solid #eaecef;
+  }
+
+  .samples {
+      padding-top: 1em;
+      padding-bottom: 1em;
+  }
+
+  .sample span {
+    display: block;
+    padding-right:10px;
+  }
+
+  .sample audio {
+    display: block;
+  }
+
+  .sample {
+      display:flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-bottom:0.5em;
+  }
+
+  .sample span:nth-of-type(even) {
+    padding-left:15px;
+  }
+  .lang>.sample span:nth-of-type(odd) {
+    width:130px;
+  }
+  
